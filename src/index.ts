@@ -5,12 +5,15 @@
  * See file LICENSE for detail or copy at https://opensource.org/licenses/MIT
  */
 
-import * as fs from 'fs';
 import {request} from 'gaxios';
 import * as jws from 'jws';
 import * as mime from 'mime';
-import {promisify} from 'util';
+import {promisify} from 'es6-promisify';
 
+const readFile = function(key: string, value: string) {
+  throw new Error("This feature is not supported")
+}
+/*
 const readFile = fs.readFile
   ? promisify(fs.readFile)
   : async () => {
@@ -20,6 +23,7 @@ const readFile = fs.readFile
         'MISSING_CREDENTIALS'
       );
     };
+*/
 
 const GOOGLE_TOKEN_URL = 'https://www.googleapis.com/oauth2/v4/token';
 const GOOGLE_REVOKE_TOKEN_URL =
