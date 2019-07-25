@@ -39,7 +39,6 @@
   "dependencies": {
     "@types/es6-promisify": "^6.0.0",
     "gaxios": "^2.0.0",
-    "google-p12-pem": "^2.0.0",
     "jws": "^3.1.5",
     "mime": "^2.2.0"
   },
